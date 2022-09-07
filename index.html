@@ -1,67 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add a relevant page title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isaac Odrosky | Resume</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header>
-        <h1>Your Name</h1>
-        <h2>Job title or tagline</h2>
+        <h1>Isaac Odrosky</h1>
+        <h2>Web designer & developer</h2>
 
-        <p>Add your profile copy here. Add more paragraphs or links as needed. Here is some dummy text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.</p>
-        <p>Add another paragraph if needed.</p>
+        <p>
+          Hi! I'm a web designer, developer, and photographer based in Carrboro,
+          NC. I specialize in front-end development, wedding photography, and
+          live event photography.
+        </p>
       </header>
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section>
+      <section class="projects">
         <h2>Featured Projects</h2>
-        <p>View selected projects below. More information can be found at <a href="http://christinatruong.com">christinatruong.com</a>.</p>
+        <p>
+          View selected projects below. More information can be found at
+          <a href="http://isaacodrosky.wordpress.com"
+            >isaacodrosky.wordpress.com</a
+          >.
+        </p>
 
         <!-- Copy the whole <section> block to add more projects. -->
         <section>
-          <h3>Project Name</h3>
-          <img src="project-thumbnail.png" alt="description of image">
-          <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
-          <a href="#" target="_blank">View project / case study</a>
+          <h3>Salisbury-Rowan PFLAG Website</h3>
+          <img src="images/project-pflag.jpg" alt="description of image" />
+          <p>
+            Summary or description of the project and/or your role in it. Add as
+            many paragraphs as you need.
+          </p>
+          <a class="btn" href="https://salisburyrowanpflag.org" target="_blank"
+            >View project</a
+          >
         </section>
         <!-- End of Project block. -->
+
+        <section>
+          <h3>Vicious Cycles Website</h3>
+          <img src="images/project-viciouscycles.jpg" alt="description of image" />
+          <p>
+            Summary or description of the project and/or your role in it. Add as
+            many paragraphs as you need.
+          </p>
+          <a class="btn"
+            href="https://wcet.waketech.edu/sodrosky/web140/viciouscyclesfinal/index.html"
+            target="_blank"
+            >View project</a
+          >
+        </section>
       </section>
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section>
+      <section class="work-experience">
         <h2>Work Experience</h2>
-        <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
 
         <!-- Copy this whole <section> block to add more jobs. -->
         <section>
-          <h3>Job title</h3>
-          <p>Company Name</p>
-          <p>Date at job</p>
-          <p>Job summary goes here. Add as many paragraphs as you need.</p>
-          <p>Optional list:</p>
-          <ul>
-            <li>Delete this list if you don't need it.</li>
-            <li>Created...</li>
-            <li>Lead...</li>
-            <li>Responsible for...</li>
-          </ul>
+          <h3>Photographer</h3>
+          <p>August Moon Photography</p>
+          <p>October 2020 - March 2021</p>
+          <p>
+            First photographer for events, primarily weddings. Created shot
+            list, event timelines, and captured photos throughout event with
+            DSLR. Edited images to exceed client expectations and maintained a
+            digitally organized archive of event photos.
+          </p>
+        </section>
+
+        <section>
+          <h3>Print & Marketing Supervisor</h3>
+          <p>Staples, Inc.</p>
+          <p>March 2019 - March 2021</p>
+          <p>
+            Led and developed Print & Marketing associates, implementing new
+            strategies to solve problems and create a more efficient workflow.
+            Increased customer satisfaction and retention by improving customer
+            engagement, production quality, and team development. Maintained
+            working knowledge of full line of marketing products to best serve
+            customer base of primarily business-owners.
+          </p>
         </section>
         <!-- End of Job block. -->
+
+        <section>
+          <h3>Quality Support Program Assistant</h3>
+          <p>The Children's Council of Watauga County</p>
+          <p>January 2019 - May 2019</p>
+          <p>
+            Managed data entry for Quality Support program, updating databases
+            and contact lists in Microsoft Excel & Google Sheets. Reviewed and
+            filed NC Pre-Kindergarten applications, ensuring each met state
+            requirements. Designed print and social media marketing materials
+            for programs and events using Canva & Adobe InDesign.
+          </p>
+        </section>
       </section>
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-      <section>
+      <section class="education">
         <h2>Education</h2>
+
+        <section>
+          <h3>Wake Technical Community College - Raleigh, NC</h3>
+          <p>Web Development Basics Certificate - Class of 2022</p>
+        </section>
 
         <!-- Copy this whole <section> block to add more schools. -->
         <section>
-          <h3>School name - City</h3>
-          <p>Designation received or program name, year attended</p>
-          <p>Summary or accomplishments.</p>
+          <h3>Appalachian State University - Boone, NC</h3>
+          <p>B.S. Psychology - Class of 2018</p>
         </section>
         <!-- End of School block. -->
       </section>
@@ -72,11 +128,28 @@
 
         <!-- Social media and contact links. Add or remove any networks. -->
         <ul>
-          <li><a href="mailto:email@example.com">email@example.com</a></li>
-          <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
-          <li><a href="#" target="_blank">Twitter</a></li>
-          <li><a href="#" target="_blank">LinkedIn</a></li>
-          <li><a href="#" target="_blank">Facebook</a></li>
+          <li>
+            <a href="mailto:sodrosky@my.waketech.edu"
+              >sodrosky@my.waketech.edu</a
+            >
+          </li>
+          <li>
+            <a href="http://isaacodrosky.wordpress.com" target="_blank"
+              >isaacodrosky.wordpress.com</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/isaac-odrosky-642172209/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://instagram.com/odrosky" target="_blank"
+              >Instagram</a
+            >
+          </li>
         </ul>
       </footer>
     </main>
