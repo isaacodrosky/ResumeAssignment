@@ -15,20 +15,36 @@
   <body>
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
-      <header>
+      <header id="top">
         <div class="content-wrap">
           <h1>Isaac Odrosky</h1>
           <h2>Web Designer & Developer</h2>
           <p>
-            Hi! I'm a web designer, developer, and photographer based in
+            Hello! I'm a web designer, developer, and photographer based in
             Carrboro, NC. I specialize in front-end development, wedding
             photography, and live event photography.
           </p>
         </div>
       </header>
 
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            About Me
+            <!-- begin dropdown from about me -->
+            <ul class="dropdown-list">
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#work-experience">Work Experience</a></li>
+              <li><a href="#education">Education</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="content-wrap">
           <h2>Featured Projects</h2>
           <p>
@@ -42,7 +58,9 @@
             <img src="images/project-pflag.jpg" alt="description of image" />
             <h3>Salisbury-Rowan PFLAG Website</h3>
             <p>
-              This site was created for a non&#8209;profit organization in June 2022. It contains an event calendar, contact form, and accordion element and is responsive across all viewports.
+              This site was created for a non&#8209;profit organization in June
+              2022. It contains an event calendar, contact form, and accordion
+              element and is responsive across all viewports.
             </p>
             <a
               class="btn"
@@ -65,7 +83,9 @@
             />
             <h3>Vicious Cycles Website</h3>
             <p>
-              This site was created for a fictitious bike shop based in Raleigh, NC in July 2022. It contains seven unique pages, including a contact form and is coded in HTML & CSS.
+              This site was created for a fictitious bike shop based in Raleigh,
+              NC in July 2022. It contains seven unique pages, including a
+              contact form and is coded in HTML & CSS.
             </p>
             <a
               class="btn"
@@ -84,53 +104,67 @@
       </section>
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section class="work-experience">
-        <div class="content-wrap">
+      <section class="work-experience" id="work-experience">
+        <div class="content-wrap item-details">
           <h2>Work Experience</h2>
           <!-- Copy this whole <section> block to add more jobs. -->
-          <section>
-            <h3>Photographer</h3>
-            <p>August Moon Photography</p>
-            <p>October 2020 - March 2021</p>
-            <p>
-              First photographer for events, primarily weddings. Created shot
-              list, event timelines, and captured photos throughout event with
-              DSLR. Edited images to exceed client expectations and maintained a
-              digitally organized archive of event photos.
-            </p>
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Photographer</h3>
+              <p>Freelance</p>
+              <p>October 2020 - March 2021</p>
+            </div>
+            <div class="job-summary">
+              <p>
+                First photographer for events, primarily weddings. Created shot
+                list, event timelines, and captured photos throughout event with
+                DSLR. Edited images to exceed client expectations and maintained
+                a digitally organized archive of event photos.
+              </p>
+            </div>
           </section>
-          <section>
-            <h3>Print & Marketing Supervisor</h3>
-            <p>Staples, Inc.</p>
-            <p>March 2019 - March 2021</p>
-            <p>
-              Led and developed Print & Marketing associates, implementing new
-              strategies to solve problems and create a more efficient workflow.
-              Increased customer satisfaction and retention by improving
-              customer engagement, production quality, and team development.
-              Maintained working knowledge of full line of marketing products to
-              best serve customer base of primarily business-owners.
-            </p>
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Print & Marketing Supervisor</h3>
+              <p>Staples, Inc.</p>
+              <p>March 2019 - March 2021</p>
+            </div>
+            <div class="job-summary">
+              <p>
+                Led and developed Print & Marketing associates, implementing new
+                strategies to solve problems and create a more efficient
+                workflow. Increased customer satisfaction and retention by
+                improving customer engagement, production quality, and team
+                development. Maintained working knowledge of full line of
+                marketing products to best serve customer base of primarily
+                business-owners.
+              </p>
+            </div>
           </section>
           <!-- End of Job block. -->
-          <section>
-            <h3>Quality Support Program Assistant</h3>
-            <p>The Children's Council of Watauga County</p>
-            <p>January 2019 - May 2019</p>
-            <p>
-              Managed data entry for Quality Support program, updating databases
-              and contact lists in Microsoft Excel & Google Sheets. Reviewed and
-              filed NC Pre-Kindergarten applications, ensuring each met state
-              requirements. Designed print and social media marketing materials
-              for programs and events using Canva & Adobe InDesign.
-            </p>
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Quality Support Program Assistant</h3>
+              <p>The Children's Council of Watauga County</p>
+              <p>January 2019 - May 2019</p>
+            </div>
+            <div class="job-summary">
+              <p>
+                Managed data entry for Quality Support program, updating
+                databases and contact lists in Microsoft Excel & Google Sheets.
+                Reviewed and filed NC Pre-Kindergarten applications, ensuring
+                each met state requirements. Designed print and social media
+                marketing materials for programs and events using Canva & Adobe
+                InDesign.
+              </p>
+            </div>
           </section>
         </div>
       </section>
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-      <section class="education">
-        <div class="content-wrap">
+      <section class="education" id="education">
+        <div class="content-wrap item-details">
           <h2>Education</h2>
           <section>
             <h3>Wake Technical Community College - Raleigh, NC</h3>
@@ -147,10 +181,10 @@
 
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
       <footer>
-        <div class="content-wrap">
+        <div class="content-wrap" id="contact">
           <h2>Let's Keep in Touch!</h2>
           <!-- Social media and contact links. Add or remove any networks. -->
-          <ul>
+          <ul class="contact-list">
             <li>
               <a href="mailto:sodrosky@my.waketech.edu"
                 >sodrosky@my.waketech.edu</a
